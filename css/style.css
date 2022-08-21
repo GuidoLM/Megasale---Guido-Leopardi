@@ -43,8 +43,21 @@ main{
 
 footer{
     grid-area: pie;
-}
+    text-align: center;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.6);
+  }
 
 .marginBot{
     margin-bottom: 30px;
+}
+
+
+/* Coloreado general de la página */
+.fondoBoton {
+    background-color: orangered;
+}
+
+.fondoBoton:hover{
+    background-color: midnightblue;
 }

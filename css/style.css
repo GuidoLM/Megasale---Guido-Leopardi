@@ -1,0 +1,50 @@
+
+/* ESTRUCTURACIÓN DE LA PÁGINA */
+
+/* INDEX */
+.gridPadre {
+    display: grid;
+    grid-template-areas:
+    "encabezado navegacion"
+    "carrusel carrusel"
+    "productos productos"
+    "marcas marcas"
+    "pie pie";
+}
+
+header {
+    grid-area: encabezado;
+}
+
+.logo {
+    height: 80px;
+    margin-left: 20%;
+
+}
+
+nav {
+    grid-area: navegacion;
+    margin-top: 3px;
+}
+
+.carrusel{
+    grid-area: carrusel;
+}
+
+main{
+    grid-area: productos;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.marcas{
+    grid-area: marcas;
+}
+
+footer{
+    grid-area: pie;
+}
+
+.marginBot{
+    margin-bottom: 30px;
+}

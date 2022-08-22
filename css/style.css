@@ -1,6 +1,8 @@
 
 /* ESTRUCTURACIÓN DE LA PÁGINA */
 
+/* GRID */
+
 .gridPadre {
     display: grid;
     grid-template-areas:
@@ -47,6 +49,22 @@ footer{
     color: rgba(0, 0, 0, 0.6);
   }
 
+  /* MEDIAQUARY */
+
+  @media (max-width: 490px) {
+    .gridPadre {
+      grid-template-areas:
+      "navegacion" 
+      "encabezado" 
+      "carrusel"
+      "productos"
+      "marcas"
+      "pie";
+    }
+  }
+
+  /* MARGIN Y ACOMODACIONES */
+
 .marginBot{
     margin-bottom: 30px;
 }
@@ -54,6 +72,18 @@ footer{
 .ayudaAcomodacion{
     width: 70%;
     margin-left: 20%;
+}
+
+.descripcion {
+  margin-bottom: 20px;
+}
+
+.centroVertical{
+  margin-top: 10%;
+}
+
+.centroVertical2{
+  margin-top: 5%;
 }
 
 /* Coloreado general de la página */

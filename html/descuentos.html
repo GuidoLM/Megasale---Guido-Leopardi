@@ -16,132 +16,216 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body class="gridPadre">
-    
-   <!-- LOGO -->
-   <header>
-    <img class="logo" src="../img/Mega.JPG" alt="megasale" />
-  </header>
+    <!-- LOGO -->
+    <header>
+      <img class="logo" src="../img/Mega.JPG" alt="megasale" />
+    </header>
 
-  <!-- MENÚ DE NAVEGACIÓN -->
-  <nav>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html"
-                >Inicio</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Marcas
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="masCasa.html">+CASA</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="trueno.html">TRUENO</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="descuentos.html">Descuentos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ayuda.html">Ayuda</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Buscar"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Buscar
-            </button>
-          </form>
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navegación</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Marcas
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="masCasa.html">+CASA</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="trueno.html">TRUENO</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="descuentos.html">Descuentos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ayuda.html">Ayuda</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
+      </nav>
     </nav>
-  </nav>
 
-  <main class="separacion">
-    <h2>Descuentos</h2>
-    <p>¡Aprovechá de nuestras mejores promociones ahora que extendimos el día del niño hasta final de mes!</p>
-    <div class="row row-cols-1 row-cols-md-4 g-4 marginBot">
+    <!-- Productos en Descuentos -->
+    <main class="separacion">
+      <h2>Descuentos</h2>
+      <p>
+        ¡Aprovechá de nuestras mejores promociones ahora que extendimos el día
+        del niño hasta final de mes!
+      </p>
+      <div class="row row-cols-1 row-cols-md-4 g-4 marginBot">
         <div class="col">
-
           <!-- Primer producto -->
-          <div class="card">
-            <img src="../img/5094.jpg" class="card-img-top" alt="Monopatin Urbano">
+          <div class="card a2">
+            <img
+              src="../img/5094.jpg"
+              class="card-img-top"
+              alt="Monopatin Urbano"
+            />
             <div class="card-body">
               <h5 class="card-title">Monopatín Urbano</h5>
               <!-- --Botón para comprar -->
               <a href="#" class="btn btn-primary fondoBoton">Comprar</a>
 
               <!-- Boton para agregar al carrito -->
-              <button type="button" class="btn btn-primary fondoBoton" data-bs-toggle="modal" data-bs-target="#p1">
+              <button
+                type="button"
+                class="btn btn-primary fondoBoton"
+                data-bs-toggle="modal"
+                data-bs-target="#p1"
+              >
                 Agregar al carrito
               </button>
 
               <!-- despliegue del cuadro flotante -->
-              <div class="modal fade" id="p1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div
+                class="modal fade"
+                id="p1"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Agregar al carrito</h5>
-                      <button type="button" class="btn-close fondoBoton" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Agregar al carrito
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close fondoBoton"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
                     <div class="modal-body">
-                      <img src="../img/5094.jpg" class="card-img-top" alt="Monopatin Urbano">
+                      <img
+                        src="../img/5094.jpg"
+                        class="card-img-top"
+                        alt="Monopatin Urbano"
+                      />
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary fondoBoton" data-bs-dismiss="modal">Cancelar</button>
-                      <button type="button" class="btn btn-primary fondoBoton">Agregar al carrito</button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary fondoBoton"
+                        data-bs-dismiss="modal"
+                      >
+                        Cancelar
+                      </button>
+                      <button type="button" class="btn btn-primary fondoBoton">
+                        Agregar al carrito
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
         <div class="col">
-
           <!-- Segundo Producto -->
-          <div class="card">
-            <img src="../img/3418.jpg" class="card-img-top" alt="Set de sonajeros">
+          <div class="card a3">
+            <img
+              src="../img/3418.jpg"
+              class="card-img-top"
+              alt="Set de sonajeros"
+            />
             <div class="card-body">
               <h5 class="card-title">Set de Sonajeros</h5>
               <!-- --Botón para comprar -->
               <a href="#" class="btn btn-primary fondoBoton">Comprar</a>
 
               <!-- Boton para agregar al carrito -->
-              <button type="button" class="btn btn-primary fondoBoton" data-bs-toggle="modal" data-bs-target="#p2">
+              <button
+                type="button"
+                class="btn btn-primary fondoBoton"
+                data-bs-toggle="modal"
+                data-bs-target="#p2"
+              >
                 Agregar al carrito
               </button>
 
               <!-- despliegue del cuadro flotante -->
-              <div class="modal fade" id="p2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div
+                class="modal fade"
+                id="p2"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Agregar al carrito</h5>
-                      <button type="button" class="btn-close fondoBoton" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Agregar al carrito
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close fondoBoton"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
                     <div class="modal-body">
-                      <img src="../img/3418.jpg" class="card-img-top" alt="Set de sonajeros">
+                      <img
+                        src="../img/3418.jpg"
+                        class="card-img-top"
+                        alt="Set de sonajeros"
+                      />
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary fondoBoton" data-bs-dismiss="modal">Cancelar</button>
-                      <button type="button" class="btn btn-primary fondoBoton">Agregar al carrito</button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary fondoBoton"
+                        data-bs-dismiss="modal"
+                      >
+                        Cancelar
+                      </button>
+                      <button type="button" class="btn btn-primary fondoBoton">
+                        Agregar al carrito
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -150,34 +234,67 @@
           </div>
         </div>
         <div class="col">
-
           <!-- Tercer Producto -->
-          <div class="card">
-            <img src="../img/5023.jpg" class="card-img-top" alt="Skate Profesional">
+          <div class="card a4">
+            <img
+              src="../img/5023.jpg"
+              class="card-img-top"
+              alt="Skate Profesional"
+            />
             <div class="card-body">
               <h5 class="card-title">Skate Profesional</h5>
               <!-- --Botón para comprar -->
               <a href="#" class="btn btn-primary fondoBoton">Comprar</a>
 
               <!-- Boton para agregar al carrito -->
-              <button type="button" class="btn btn-primary fondoBoton" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <button
+                type="button"
+                class="btn btn-primary fondoBoton"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
                 Agregar al carrito
               </button>
 
               <!-- despliegue del cuadro flotante -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Agregar al carrito</h5>
-                      <button type="button" class="btn-close fondoBoton" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Agregar al carrito
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close fondoBoton"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
                     <div class="modal-body">
-                      <img src="../img/5023.jpg" class="card-img-top" alt="Skate Profesional">
+                      <img
+                        src="../img/5023.jpg"
+                        class="card-img-top"
+                        alt="Skate Profesional"
+                      />
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary fondoBoton" data-bs-dismiss="modal">Cancelar</button>
-                      <button type="button" class="btn btn-primary fondoBoton">Agregar al carrito</button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary fondoBoton"
+                        data-bs-dismiss="modal"
+                      >
+                        Cancelar
+                      </button>
+                      <button type="button" class="btn btn-primary fondoBoton">
+                        Agregar al carrito
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -186,34 +303,67 @@
           </div>
         </div>
         <div class="col">
-
           <!-- Cuarto Producto -->
-          <div class="card">
-            <img src="../img/5097.jpg" class="card-img-top" alt="monopaton luces">
+          <div class="card a5">
+            <img
+              src="../img/5097.jpg"
+              class="card-img-top"
+              alt="monopaton luces"
+            />
             <div class="card-body">
               <h5 class="card-title">Monopatin con Luces</h5>
               <!-- --Botón para comprar -->
               <a href="#" class="btn btn-primary fondoBoton">Comprar</a>
 
               <!-- Boton para agregar al carrito -->
-              <button type="button" class="btn btn-primary fondoBoton" data-bs-toggle="modal" data-bs-target="#p3">
+              <button
+                type="button"
+                class="btn btn-primary fondoBoton"
+                data-bs-toggle="modal"
+                data-bs-target="#p3"
+              >
                 Agregar al carrito
               </button>
 
               <!-- despliegue del cuadro flotante -->
-              <div class="modal fade" id="p3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div
+                class="modal fade"
+                id="p3"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Agregar al carrito</h5>
-                      <button type="button" class="btn-close fondoBoton" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Agregar al carrito
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close fondoBoton"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
                     <div class="modal-body">
-                      <img src="../img/5097.jpg" class="card-img-top" alt="monopaton luces">
+                      <img
+                        src="../img/5097.jpg"
+                        class="card-img-top"
+                        alt="monopaton luces"
+                      />
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary fondoBoton" data-bs-dismiss="modal">Cancelar</button>
-                      <button type="button" class="btn btn-primary fondoBoton">Agregar al carrito</button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary fondoBoton"
+                        data-bs-dismiss="modal"
+                      >
+                        Cancelar
+                      </button>
+                      <button type="button" class="btn btn-primary fondoBoton">
+                        Agregar al carrito
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -224,175 +374,293 @@
       </div>
       <div class="row row-cols-1 row-cols-md-4 g-4">
         <div class="col">
-
           <!-- Quinto producto -->
-          <div class="card">
-            <img src="../img/3004.jpg" class="card-img-top" alt="Moto">
+          <div class="card a2">
+            <img src="../img/3004.jpg" class="card-img-top" alt="Moto" />
             <div class="card-body">
               <h5 class="card-title">Moto a Escala 1:12</h5>
               <!-- --Botón para comprar -->
               <a href="#" class="btn btn-primary fondoBoton">Comprar</a>
 
               <!-- Boton para agregar al carrito -->
-              <button type="button" class="btn btn-primary fondoBoton" data-bs-toggle="modal" data-bs-target="#p5">
+              <button
+                type="button"
+                class="btn btn-primary fondoBoton"
+                data-bs-toggle="modal"
+                data-bs-target="#p5"
+              >
                 Agregar al carrito
               </button>
 
               <!-- despliegue del cuadro flotante -->
-              <div class="modal fade" id="p5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div
+                class="modal fade"
+                id="p5"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Agregar al carrito</h5>
-                      <button type="button" class="btn-close fondoBoton" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Agregar al carrito
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close fondoBoton"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
                     <div class="modal-body">
-                      <img src="../img/3004.jpg" class="card-img-top" alt="Moto">
+                      <img
+                        src="../img/3004.jpg"
+                        class="card-img-top"
+                        alt="Moto"
+                      />
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary fondoBoton" data-bs-dismiss="modal">Cancelar</button>
-                      <button type="button" class="btn btn-primary fondoBoton">Agregar al carrito</button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary fondoBoton"
+                        data-bs-dismiss="modal"
+                      >
+                        Cancelar
+                      </button>
+                      <button type="button" class="btn btn-primary fondoBoton">
+                        Agregar al carrito
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-            
             </div>
           </div>
         </div>
         <div class="col">
-
           <!-- Sexto Producto -->
-          <div class="card">
-            <img src="../img/5026.jpg" class="card-img-top" alt="patapata">
+          <div class="card a3">
+            <img src="../img/5026.jpg" class="card-img-top" alt="patapata" />
             <div class="card-body">
-              <h5 class="card-title">Twister Pata - Pata </h5>
+              <h5 class="card-title">Twister Pata - Pata</h5>
               <!-- --Botón para comprar -->
               <a href="#" class="btn btn-primary fondoBoton">Comprar</a>
 
               <!-- Boton para agregar al carrito -->
-              <button type="button" class="btn btn-primary fondoBoton" data-bs-toggle="modal" data-bs-target="#p6">
+              <button
+                type="button"
+                class="btn btn-primary fondoBoton"
+                data-bs-toggle="modal"
+                data-bs-target="#p6"
+              >
                 Agregar al carrito
               </button>
 
               <!-- despliegue del cuadro flotante -->
-              <div class="modal fade" id="p6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div
+                class="modal fade"
+                id="p6"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Agregar al carrito</h5>
-                      <button type="button" class="btn-close fondoBoton" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Agregar al carrito
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close fondoBoton"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
                     <div class="modal-body">
-                      <img src="../img/5026.jpg" class="card-img-top" alt="patapata">
+                      <img
+                        src="../img/5026.jpg"
+                        class="card-img-top"
+                        alt="patapata"
+                      />
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary fondoBoton" data-bs-dismiss="modal">Cancelar</button>
-                      <button type="button" class="btn btn-primary fondoBoton">Agregar al carrito</button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary fondoBoton"
+                        data-bs-dismiss="modal"
+                      >
+                        Cancelar
+                      </button>
+                      <button type="button" class="btn btn-primary fondoBoton">
+                        Agregar al carrito
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
         <div class="col">
-
           <!-- Séptimo Producto -->
-          <div class="card">
-            <img src="../img/5090.jpg" class="card-img-top" alt="monopatin">
+          <div class="card a4">
+            <img src="../img/5090.jpg" class="card-img-top" alt="monopatin" />
             <div class="card-body">
               <h5 class="card-title">Monopatín</h5>
               <!-- --Botón para comprar -->
               <a href="#" class="btn btn-primary fondoBoton">Comprar</a>
 
               <!-- Boton para agregar al carrito -->
-              <button type="button" class="btn btn-primary fondoBoton" data-bs-toggle="modal" data-bs-target="#p7">
+              <button
+                type="button"
+                class="btn btn-primary fondoBoton"
+                data-bs-toggle="modal"
+                data-bs-target="#p7"
+              >
                 Agregar al carrito
               </button>
 
               <!-- despliegue del cuadro flotante -->
-              <div class="modal fade" id="p7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div
+                class="modal fade"
+                id="p7"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Agregar al carrito</h5>
-                      <button type="button" class="btn-close fondoBoton" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Agregar al carrito
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close fondoBoton"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
                     <div class="modal-body">
-                      <img src="../img/5090.jpg" class="card-img-top" alt="monopatin">
+                      <img
+                        src="../img/5090.jpg"
+                        class="card-img-top"
+                        alt="monopatin"
+                      />
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary fondoBoton" data-bs-dismiss="modal">Cancelar</button>
-                      <button type="button" class="btn btn-primary fondoBoton">Agregar al carrito</button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary fondoBoton"
+                        data-bs-dismiss="modal"
+                      >
+                        Cancelar
+                      </button>
+                      <button type="button" class="btn btn-primary fondoBoton">
+                        Agregar al carrito
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
         <div class="col">
-
           <!-- Octavo Producto -->
-          <div class="card">
-            <img src="../img/5159.jpg" class="card-img-top" alt="casco rodilleras">
+          <div class="card a5">
+            <img
+              src="../img/5159.jpg"
+              class="card-img-top"
+              alt="casco rodilleras"
+            />
             <div class="card-body">
               <h5 class="card-title">Juego de Cascos y rodilleras</h5>
               <!-- --Botón para comprar -->
               <a href="#" class="btn btn-primary fondoBoton">Comprar</a>
 
               <!-- Boton para agregar al carrito -->
-              <button type="button" class="btn btn-primary fondoBoton" data-bs-toggle="modal" data-bs-target="#p8">
+              <button
+                type="button"
+                class="btn btn-primary fondoBoton"
+                data-bs-toggle="modal"
+                data-bs-target="#p8"
+              >
                 Agregar al carrito
               </button>
 
               <!-- despliegue del cuadro flotante -->
-              <div class="modal fade" id="p8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div
+                class="modal fade"
+                id="p8"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Agregar al carrito</h5>
-                      <button type="button" class="btn-close fondoBoton" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Agregar al carrito
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close fondoBoton"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
                     <div class="modal-body">
-                        <img src="../img/5159.jpg" class="card-img-top" alt="casco rodilleras">
+                      <img
+                        src="../img/5159.jpg"
+                        class="card-img-top"
+                        alt="casco rodilleras"
+                      />
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary fondoBoton" data-bs-dismiss="modal">Cancelar</button>
-                      <button type="button" class="btn btn-primary fondoBoton">Agregar al carrito</button>
+                      <button
+                        type="button"
+                        class="btn btn-secondary fondoBoton"
+                        data-bs-dismiss="modal"
+                      >
+                        Cancelar
+                      </button>
+                      <button type="button" class="btn btn-primary fondoBoton">
+                        Agregar al carrito
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
       </div>
-</main>
+    </main>
 
-<!-- PIE DE PÁGINA -->
-<footer data-aos="fade-left"
-data-aos-anchor="#example-anchor"
-data-aos-offset="500"
-data-aos-duration="500">
-  <hr />
-  <p>2022 MegasaleArgentina.</p>
-  <p>Av. No Inventada 555, Esto Existe, Buenos Aires, Argentina.</p>
-  <p>Tel: 11 5555 5555.</p>
-  <p>Desarrollado por Guido Leopardi.-</p>
-</footer>
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <hr />
+      <p>2022 MegasaleArgentina.</p>
+      <p>Av. No Inventada 555, Esto Existe, Buenos Aires, Argentina.</p>
+      <p>Tel: 11 5555 5555.</p>
+      <p>Desarrollado por Guido Leopardi.-</p>
+    </footer>
 
+    <!-- SCRIPTS -->
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
 
-<!-- SCRIPTS -->
-<!-- JavaScript Bundle with Popper -->
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-  crossorigin="anonymous"
-></script>
-</body>
+    <!-- Animate.style -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

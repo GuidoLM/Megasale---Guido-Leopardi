@@ -21,10 +21,11 @@
    <header>
     <img class="logo" src="../img/Mega.JPG" alt="megasale" />
   </header>
+  
 
   <!-- MENÚ DE NAVEGACIÓN -->
   <nav>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -71,6 +72,38 @@
       </div>
     </nav>
   </nav>
+
+  <main class="separacion">
+    <h2>Ayuda</h2>
+    <!-- Categoría de la ayuda -->
+    <div class="ayudaAcomodacion a2">
+    <form action="">
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Consultas</option>
+      <option value="1">Cancelaciones</option>
+      <option value="2">Devoluciones</option>
+      <option value="3">Productos</option>
+      <option value="4">Métodos de pago</option>
+    </select>
+
+    <!-- Campos rellenables -->
+   
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Dirección de eMail</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@ejemplo.com">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Ingrese su conuslta acá" rows="5"></textarea>
+
+      <!-- Botones -->
+      <button type="submit" class="btn btn-primary fondoBoton">Enviar</button>
+      <button type="reset" class="btn btn-primary fondoBoton">Reestablecer</button>
+    </div>
+  </form>
+  </div>
+
+  </main>
     
 <!-- PIE DE PÁGINA -->
 <footer data-aos="fade-left"

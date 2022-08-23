@@ -1,11 +1,10 @@
-
 /* ESTRUCTURACIÓN DE LA PÁGINA */
 
 /* GRID */
 
 .gridPadre {
-    display: grid;
-    grid-template-areas:
+  display: grid;
+  grid-template-areas:
     "encabezado navegacion"
     "carrusel carrusel"
     "productos productos"
@@ -14,177 +13,178 @@
 }
 
 header {
-    grid-area: encabezado;
+  grid-area: encabezado;
 }
 
 .logo {
-    height: 80px;
-    margin-left: 20%;
-
+  height: 80px;
+  margin-left: 20%;
 }
 
 nav {
-    grid-area: navegacion;
-    margin-top: 3px;
+  grid-area: navegacion;
+  margin-top: 3px;
 }
 
-.carrusel{
-    grid-area: carrusel;
+.carrusel {
+  grid-area: carrusel;
 }
 
-main{
-    grid-area: productos;
-    margin-left: 10%;
-    margin-right: 10%;
+main {
+  grid-area: productos;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-.marcas{
-    grid-area: marcas;
+.marcas {
+  grid-area: marcas;
 }
 
-footer{
-    grid-area: pie;
-    text-align: center;
-    width: 100%;
-    color: rgba(0, 0, 0, 0.6);
-  }
+footer {
+  grid-area: pie;
+  text-align: center;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.6);
+}
 
-  /* MEDIAQUARY */
+/* MEDIAQUARY */
 
-  @media (max-width: 490px) {
-    .gridPadre {
-      grid-template-areas:
-      "navegacion" 
-      "encabezado" 
+@media (max-width: 490px) {
+  .gridPadre {
+    grid-template-areas:
+      "navegacion"
+      "encabezado"
       "carrusel"
       "productos"
       "marcas"
       "pie";
-    }
   }
-
-  /* MARGIN Y ACOMODACIONES */
-
-.marginBot{
-    margin-bottom: 30px;
 }
 
-.ayudaAcomodacion{
-    width: 70%;
-    margin-left: 20%;
+/* MARGIN Y ACOMODACIONES */
+
+.marginBot {
+  margin-bottom: 30px;
+}
+
+.ayudaAcomodacion {
+  width: 70%;
+  margin-left: 20%;
 }
 
 .descripcion {
   margin-bottom: 20px;
 }
 
-.centroVertical{
+.centroVertical {
   margin-top: 10%;
 }
 
-.centroVertical2{
+.centroVertical2 {
   margin-top: 5%;
+}
+
+.centroHorizontal {
+  margin-left: 20%;
 }
 
 /* Coloreado general de la página */
 .fondoBoton {
-    background-color: orangered;
+  background-color: orangered;
 }
 
-.fondoBoton:hover{
-    background-color: midnightblue;
+.fondoBoton:hover {
+  background-color: midnightblue;
 }
 
-h2{
-    color: orangered;
-    margin-bottom: 15px;
+h2 {
+  color: orangered;
+  margin-bottom: 15px;
 }
 
-p{
-    color: midnightblue;
+p {
+  color: midnightblue;
 }
 
-.separacion{
-    margin-top: 30px;
+.separacion {
+  margin-top: 30px;
 }
-
 
 /* ANIMACIONES */
 
+@keyframes aparicion {
+  0% {
+    opacity: 0%;
+    transform: translate(0rem, 2rem);
+  }
+  100% {
+    opacity: 100%;
+    transform: translate(0rem, 0px);
+  }
+}
 
-  @keyframes aparicion {
-    0% {
-        opacity: 0%;
-        transform: translate(0rem, 2rem)
-    }
-    100% {
-        opacity: 100%;
-        transform: translate(0rem, 0px);
-    }
+.a2 {
+  animation-name: aparicion;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
+}
+
+@keyframes aparicion2 {
+  0% {
+    opacity: 0%;
+    transform: translate(0rem, 2rem);
   }
-  
-  .a2{
-    animation-name: aparicion;
-    animation-duration: 3s;
-    animation-iteration-count: initial;
+  12% {
+    opacity: 0%;
   }
-  
-  @keyframes aparicion2 {
-    0% {
-      opacity: 0%;
-      transform: translate(0rem, 2rem)
+  100% {
+    opacity: 100%;
+    transform: translate(0rem, 0px);
   }
-    12% {
-        opacity: 0%;
-    }
-    100% {
-        opacity: 100%;
-        transform: translate(0rem, 0px);
-    }
+}
+
+.a3 {
+  animation-name: aparicion2;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
+}
+
+@keyframes aparicion3 {
+  0% {
+    opacity: 0%;
+    transform: translate(0rem, 2rem);
   }
-  
-  .a3{
-    animation-name: aparicion2;
-    animation-duration: 3s;
-    animation-iteration-count: initial;
+  24% {
+    opacity: 0%;
   }
-  
-  @keyframes aparicion3 {
-    0% {
-      opacity: 0%;
-      transform: translate(0rem, 2rem)
+  100% {
+    opacity: 100%;
+    transform: translate(0rem, 0px);
   }
-    24% {
-        opacity: 0%;
-    }
-    100% {
-        opacity: 100%;
-        transform: translate(0rem, 0px);
-    }
+}
+
+.a4 {
+  animation-name: aparicion3;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
+}
+
+@keyframes aparicion4 {
+  0% {
+    opacity: 0%;
+    transform: translate(0rem, 2rem);
   }
-  
-  .a4{
-    animation-name: aparicion3;
-    animation-duration: 3s;
-    animation-iteration-count: initial;
+  48% {
+    opacity: 0%;
   }
-  
-  @keyframes aparicion4 {
-    0% {
-      opacity: 0%;
-      transform: translate(0rem, 2rem)
+  100% {
+    opacity: 100%;
+    transform: translate(0rem, 0px);
   }
-    48% {
-        opacity: 0%;
-    }
-    100% {
-        opacity: 100%;
-        transform: translate(0rem, 0px);
-    }
-  }
-  
-  .a5{
-    animation-name: aparicion4;
-    animation-duration: 3s;
-    animation-iteration-count: initial;
-  }
+}
+
+.a5 {
+  animation-name: aparicion4;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
+}

@@ -98,7 +98,6 @@ footer {
   margin-left: 13%;
 }
 
-
 /* Coloreado general de la página */
 .fondoBoton {
   background-color: orangered;
@@ -121,7 +120,7 @@ p {
   margin-top: 30px;
 }
 
-a{
+a {
   text-decoration: none;
   color: orangered;
 }

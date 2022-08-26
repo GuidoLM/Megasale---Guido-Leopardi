@@ -38,6 +38,8 @@ main {
 
 .marcas {
   grid-area: marcas;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 footer {
@@ -88,6 +90,15 @@ footer {
   margin-left: 20%;
 }
 
+.centroHorizontal2 {
+  margin-left: 10%;
+}
+
+.centroHorizontal3 {
+  margin-left: 13%;
+}
+
+
 /* Coloreado general de la página */
 .fondoBoton {
   background-color: orangered;
@@ -110,6 +121,10 @@ p {
   margin-top: 30px;
 }
 
+a{
+  text-decoration: none;
+  color: orangered;
+}
 /* ANIMACIONES */
 
 @keyframes aparicion {

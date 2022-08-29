@@ -1,0 +1,71 @@
+
+@import"margin";
+@import"coloreado";
+@import"animation";
+
+/* GRID */
+
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.gridPadre {
+    display: grid;
+    grid-template-areas:
+      "encabezado navegacion"
+      "carrusel carrusel"
+      "productos productos"
+      "marcas marcas"
+      "pie pie";
+  }
+  
+  header {
+    grid-area: encabezado;
+  }
+  
+  .logo {
+    height: 80px;
+    margin-left: 20%;
+  }
+  
+  nav {
+    grid-area: navegacion;
+    margin-top: 3px;
+  }
+  
+  .carrusel {
+    grid-area: carrusel;
+  }
+  
+  main {
+    grid-area: productos;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .marcas {
+    grid-area: marcas;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  footer {
+    grid-area: pie;
+    text-align: center;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  /* MEDIAQUARY */
+  
+  @media (max-width: 490px) {
+    .gridPadre {
+      grid-template-areas:
+        "navegacion"
+        "encabezado"
+        "carrusel"
+        "productos"
+        "marcas"
+        "pie";
+    }
+  }  

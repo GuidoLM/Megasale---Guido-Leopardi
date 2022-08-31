@@ -1,11 +1,12 @@
 /* Coloreado general de la página */
 .fondoBoton {
     background-color: orangered;
+
+    &:hover {
+      background-color: midnightblue;
+    }
   }
   
-  .fondoBoton:hover {
-    background-color: midnightblue;
-  }
   
   h2 {
     color: orangered;

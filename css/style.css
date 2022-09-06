@@ -28,9 +28,13 @@
 /* Coloreado general de la página */
 .fondoBoton {
   background-color: orangered; }
+  .fondoBoton:hover {
+    background-color: midnightblue; }
 
-.fondoBoton:hover {
-  background-color: midnightblue; }
+/*Aplicando Map - Get */
+h1 {
+  color: orangered;
+  margin-bottom: 15px; }
 
 h2 {
   color: orangered;
@@ -47,6 +51,7 @@ a {
   color: orangered; }
 
 /* ANIMACIONES */
+/* Aplicando Mixin */
 @keyframes aparicion {
   0% {
     opacity: 0%;
@@ -127,15 +132,16 @@ nav {
 .carrusel {
   grid-area: carrusel; }
 
-main {
-  grid-area: productos;
+/* Aplicando Extend */
+.e, main, .marcas {
   margin-left: 10%;
   margin-right: 10%; }
 
+main {
+  grid-area: productos; }
+
 .marcas {
-  grid-area: marcas;
-  margin-left: 10%;
-  margin-right: 10%; }
+  grid-area: marcas; }
 
 footer {
   grid-area: pie;

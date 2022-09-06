@@ -37,16 +37,20 @@
     grid-area: carrusel;
   }
   
+  /* Aplicando Extend */
+.e{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
   main {
     grid-area: productos;
-    margin-left: 10%;
-    margin-right: 10%;
+    @extend .e;
   }
   
   .marcas {
     grid-area: marcas;
-    margin-left: 10%;
-    margin-right: 10%;
+    @extend .e;
   }
   
   footer {

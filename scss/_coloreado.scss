@@ -7,12 +7,21 @@
     }
   }
   
-  
-  h2 {
-    color: orangered;
-    margin-bottom: 15px;
-  }
-  
+ /*Aplicando Map - Get */
+
+$titulos: (color:orangered, margin: 15px);
+
+h1 {
+  color: map-get($map: $titulos, $key: color);
+   margin-bottom: map-get($map: $titulos, $key: margin);
+}
+
+h2 {
+   color: map-get($map: $titulos, $key: color);
+    margin-bottom: map-get($map: $titulos, $key: margin);
+}
+
+
   p {
     color: midnightblue;
   }

@@ -28,9 +28,8 @@
 /* Coloreado general de la página */
 .fondoBoton {
   background-color: orangered; }
-
-.fondoBoton:hover {
-  background-color: midnightblue; }
+  .fondoBoton:hover {
+    background-color: midnightblue; }
 
 h2 {
   color: orangered;

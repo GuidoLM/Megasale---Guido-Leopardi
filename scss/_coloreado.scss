@@ -21,6 +21,10 @@ h2 {
   margin-bottom: map-get($map: $titulos, $key: margin);
 }
 
+h3 {
+  color: map-get($map: $titulos, $key: color);
+   margin-top: map-get($map: $titulos, $key: margin);
+ }
 
 p {
   color: midnightblue;

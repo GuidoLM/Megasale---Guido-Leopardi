@@ -160,6 +160,8 @@ footer {
   color: rgba(0, 0, 0, 0.6); }
 
 /* MEDIAQUARY */
-@media (max-width: 490px) {
+@media (max-width: 767px) {
   .gridPadre {
-    grid-template-areas: "navegacion" "encabezado" "carrusel" "productos" "marcas" "pie"; } }
+    grid-template-areas: "encabezado navegacion" "carrusel carrusel" "productos productos" "pie pie"; }
+  .marcas {
+    display: none; } }

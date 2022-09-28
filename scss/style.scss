@@ -63,14 +63,15 @@
   
   /* MEDIAQUARY */
   
-  @media (max-width: 490px) {
+  @media (max-width: 767px) {
     .gridPadre {
       grid-template-areas:
-        "navegacion"
-        "encabezado"
-        "carrusel"
-        "productos"
-        "marcas"
-        "pie";
+        "encabezado navegacion"
+        "carrusel carrusel"
+        "productos productos"
+        "pie pie";
+    }
+    .marcas{
+      display: none;
     }
   }  
